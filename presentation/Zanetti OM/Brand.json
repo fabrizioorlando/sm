@@ -1,0 +1,24 @@
+{
+  "presentationTable" : {
+    "name" : "Brand",
+    "presentationColumns" : [ {
+      "name" : "BRAND_BRAND_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Brand.BRAND_BRAND_DESC"
+    }, {
+      "name" : "BRAND_BRAND_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Brand.BRAND_BRAND_CODE"
+    }, {
+      "name" : "BRAND_BRAND_EQUITY_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Brand.BRAND_BRAND_EQUITY_CODE"
+    }, {
+      "name" : "BRAND_BRAND_EQUITY_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Brand.BRAND_BRAND_EQUITY_DESC"
+    }, {
+      "name" : "BRAND_LINE_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Brand.BRAND_LINE_CODE"
+    }, {
+      "name" : "BRAND_LINE_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Brand.BRAND_LINE_DESC"
+    } ]
+  }
+}

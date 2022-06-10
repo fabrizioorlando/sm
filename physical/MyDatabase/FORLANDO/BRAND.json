@@ -1,0 +1,37 @@
+{
+  "physicalTable" : {
+    "name" : "BRAND",
+    "sourceType" : "TABLE",
+    "physicalColumns" : [ {
+      "name" : "BRAND_BRAND_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "BRAND_BRAND_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "BRAND_BRAND_EQUITY_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "BRAND_BRAND_EQUITY_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "BRAND_LINE_CODE",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    }, {
+      "name" : "BRAND_LINE_DESC",
+      "dataType" : "VARCHAR",
+      "length" : 4000,
+      "nullable" : false
+    } ]
+  }
+}

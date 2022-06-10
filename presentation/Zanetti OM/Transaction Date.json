@@ -1,0 +1,42 @@
+{
+  "presentationTable" : {
+    "name" : "Transaction Date",
+    "presentationColumns" : [ {
+      "name" : "Month",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Transaction Date.Month"
+    }, {
+      "name" : "Quarter",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Transaction Date.Quarter"
+    }, {
+      "name" : "Year",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Transaction Date.Year"
+    }, {
+      "name" : "Day",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Transaction Date.Day"
+    } ],
+    "hierarchies" : [ {
+      "name" : "Transaction DateDim",
+      "sourceLogicalTable" : "logicalTable:Zanetti BM001.Transaction Date",
+      "levels" : [ {
+        "name" : "Transaction Date Total",
+        "sourceLogicalLevel" : "logicalLevel:Zanetti BM001.Transaction Date.Transaction Date Total"
+      }, {
+        "name" : "Year-Level",
+        "sourceLogicalLevel" : "logicalLevel:Zanetti BM001.Transaction Date.Year-Level",
+        "displayColumn" : "presentationColumn:Zanetti OM.Transaction Date.Year"
+      }, {
+        "name" : "Quarter-Level",
+        "sourceLogicalLevel" : "logicalLevel:Zanetti BM001.Transaction Date.Quarter-Level",
+        "displayColumn" : "presentationColumn:Zanetti OM.Transaction Date.Quarter"
+      }, {
+        "name" : "Month-Level",
+        "sourceLogicalLevel" : "logicalLevel:Zanetti BM001.Transaction Date.Month-Level",
+        "displayColumn" : "presentationColumn:Zanetti OM.Transaction Date.Month"
+      }, {
+        "name" : "Transaction Date Detail",
+        "sourceLogicalLevel" : "logicalLevel:Zanetti BM001.Transaction Date.Transaction Date Detail",
+        "displayColumn" : "presentationColumn:Zanetti OM.Transaction Date.Day"
+      } ]
+    } ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "logicalTable" : {
+    "name" : "Transaction Date",
+    "type" : "DIMENSION",
+    "primaryKey" : [ "Day" ],
+    "logicalColumns" : [ {
+      "name" : "Month",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias TIME.CAL_MONTH" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Month-Level"
+    }, {
+      "name" : "Quarter",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias TIME.CAL_QTR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Quarter-Level"
+    }, {
+      "name" : "Year",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias TIME.CAL_YEAR" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Year-Level"
+    }, {
+      "name" : "Day",
+      "dataType" : "DATETIME",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias TIME.DAY_DT" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Transaction Date Detail"
+    }, {
+      "name" : "MonthID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias TIME.CAL_MONTH_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Month-Level"
+    }, {
+      "name" : "QuarterID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias TIME.CAL_QTR_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Quarter-Level"
+    }, {
+      "name" : "YearID",
+      "dataType" : "NUMERIC",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias TIME",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias TIME.CAL_YEAR_KEY" ]
+          }
+        } ]
+      },
+      "logicalLevel" : "Year-Level"
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Alias TIME",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MyDatabase.FORLANDO.Alias TIME" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "hierarchyType" : "TIME",
+    "levelBasedHierarchy" : {
+      "defaultRootLevel" : "Transaction Date Total",
+      "logicalLevels" : [ {
+        "name" : "Transaction Date Total",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : true,
+        "disableAggregateToHigherLevel" : false
+      }, {
+        "name" : "Year-Level",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "YearID" ],
+        "displayKey" : "Year",
+        "additionalKeys" : [ [ "Year" ] ],
+        "chronologicalKey" : [ "YearID" ]
+      }, {
+        "name" : "Quarter-Level",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "QuarterID" ],
+        "displayKey" : "Quarter",
+        "additionalKeys" : [ [ "Quarter" ] ],
+        "chronologicalKey" : [ "QuarterID" ]
+      }, {
+        "name" : "Month-Level",
+        "numberOfElements" : 1,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "MonthID" ],
+        "displayKey" : "Month",
+        "additionalKeys" : [ [ "Month" ] ],
+        "chronologicalKey" : [ "MonthID" ]
+      }, {
+        "name" : "Transaction Date Detail",
+        "numberOfElements" : 22280,
+        "grandTotalLevel" : false,
+        "disableAggregateToHigherLevel" : false,
+        "primaryKey" : [ "Day" ],
+        "displayKey" : "Day",
+        "chronologicalKey" : [ "Day" ]
+      } ],
+      "logicalHierarchies" : [ {
+        "name" : "Transaction DateDim [branch at level 'Month-Level']",
+        "levels" : [ "Transaction Date Total", "Year-Level", "Quarter-Level", "Month-Level", "Transaction Date Detail" ]
+      } ]
+    }
+  }
+}

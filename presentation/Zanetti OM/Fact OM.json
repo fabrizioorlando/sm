@@ -1,0 +1,231 @@
+{
+  "presentationTable" : {
+    "name" : "Fact OM",
+    "presentationColumns" : [ {
+      "name" : "YEAR",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.YEAR"
+    }, {
+      "name" : "MONTH",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.MONTH"
+    }, {
+      "name" : "TRANS_TYPE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.TRANS_TYPE"
+    }, {
+      "name" : "TRANSACTION_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.TRANSACTION_NAME"
+    }, {
+      "name" : "ACCOUNT",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.ACCOUNT"
+    }, {
+      "name" : "TRANSACTION_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.TRANSACTION_NUMBER"
+    }, {
+      "name" : "TRANSACTION_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.TRANSACTION_DATE"
+    }, {
+      "name" : "ITEM",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.ITEM"
+    }, {
+      "name" : "DESCRIPTION",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.DESCRIPTION"
+    }, {
+      "name" : "VOLUME",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.VOLUME"
+    }, {
+      "name" : "VOLUME_KG_FREE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.VOLUME_KG_FREE"
+    }, {
+      "name" : "NET_VOLUME_KG",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.NET_VOLUME_KG"
+    }, {
+      "name" : "CASES",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.CASES"
+    }, {
+      "name" : "CASES_FREE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.CASES_FREE"
+    }, {
+      "name" : "NET_CASES",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.NET_CASES"
+    }, {
+      "name" : "EACHES",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.EACHES"
+    }, {
+      "name" : "EACHES_FREE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.EACHES_FREE"
+    }, {
+      "name" : "NET_EACHES",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.NET_EACHES"
+    }, {
+      "name" : "GROSS_AMOUNT",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.GROSS_AMOUNT"
+    }, {
+      "name" : "AMOUNT_WO_FREEGOODS",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.AMOUNT_WO_FREEGOODS"
+    }, {
+      "name" : "FREE_GOODS",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.FREE_GOODS"
+    }, {
+      "name" : "DISCOUNT",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.DISCOUNT"
+    }, {
+      "name" : "DISCOUNT_WO_FREEGOODS",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.DISCOUNT_WO_FREEGOODS"
+    }, {
+      "name" : "NET_AMOUNT",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.NET_AMOUNT"
+    }, {
+      "name" : "SHIP_TO_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SHIP_TO_NAME"
+    }, {
+      "name" : "SHIP_TO_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SHIP_TO_CODE"
+    }, {
+      "name" : "SHIP_TO_COUNTRY",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SHIP_TO_COUNTRY"
+    }, {
+      "name" : "BILL_TO_CUSTOMER_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BILL_TO_CUSTOMER_NAME"
+    }, {
+      "name" : "BILL_TO_CUSTOMER_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BILL_TO_CUSTOMER_CODE"
+    }, {
+      "name" : "SOLD_TO_CUSTOMER_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SOLD_TO_CUSTOMER_NAME"
+    }, {
+      "name" : "SOLD_TO_CUSTOMER_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SOLD_TO_CUSTOMER_CODE"
+    }, {
+      "name" : "SALES_CHANNEL_PARENT",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_CHANNEL_PARENT"
+    }, {
+      "name" : "SALES_CHANNEL_PARENT_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_CHANNEL_PARENT_DESC"
+    }, {
+      "name" : "SALES_CHANNEL_CHILD",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_CHANNEL_CHILD"
+    }, {
+      "name" : "SALES_CHANNEL_CHILD_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_CHANNEL_CHILD_DESC"
+    }, {
+      "name" : "CUSTOMER_AGGREGATION",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.CUSTOMER_AGGREGATION"
+    }, {
+      "name" : "GROUP_RW",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.GROUP_RW"
+    }, {
+      "name" : "GROUP_AGGREGATION",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.GROUP_AGGREGATION"
+    }, {
+      "name" : "SUPER_GROUP",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SUPER_GROUP"
+    }, {
+      "name" : "SALES_PERSON",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_PERSON"
+    }, {
+      "name" : "SALES_REGION_MANAGER",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_REGION_MANAGER"
+    }, {
+      "name" : "SALES_AREA_MANAGER",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_AREA_MANAGER"
+    }, {
+      "name" : "SALES_DIRECTOR",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_DIRECTOR"
+    }, {
+      "name" : "SALES_DIVISION",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SALES_DIVISION"
+    }, {
+      "name" : "PARENT_1",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.PARENT_1"
+    }, {
+      "name" : "PARENT_2",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.PARENT_2"
+    }, {
+      "name" : "BRAND_LINE_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BRAND_LINE_CODE"
+    }, {
+      "name" : "BRAND_LINE_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BRAND_LINE_DESC"
+    }, {
+      "name" : "BRAND_BRAND_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BRAND_BRAND_CODE"
+    }, {
+      "name" : "BRAND_BRAND_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BRAND_BRAND_DESC"
+    }, {
+      "name" : "BRAND_BRAND_EQUITY_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BRAND_BRAND_EQUITY_CODE"
+    }, {
+      "name" : "BRAND_BRAND_EQUITY_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BRAND_BRAND_EQUITY_DESC"
+    }, {
+      "name" : "PRODUCT_SEGMENT_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.PRODUCT_SEGMENT_CODE"
+    }, {
+      "name" : "PRODUCT_SEGMENT_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.PRODUCT_SEGMENT_DESC"
+    }, {
+      "name" : "PRODUCT_FAMILY_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.PRODUCT_FAMILY_CODE"
+    }, {
+      "name" : "PRODUCT_FAMILY_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.PRODUCT_FAMILY_DESC"
+    }, {
+      "name" : "PRODUCT_CATEGORY_CODE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.PRODUCT_CATEGORY_CODE"
+    }, {
+      "name" : "PRODUCT_CATEGORY_DESC",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.PRODUCT_CATEGORY_DESC"
+    }, {
+      "name" : "MZB_CORE_ITEM",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.MZB_CORE_ITEM"
+    }, {
+      "name" : "MAKE_BUY",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.MAKE_BUY"
+    }, {
+      "name" : "STATUS",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.STATUS"
+    }, {
+      "name" : "ACCOUNTING_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.ACCOUNTING_DATE"
+    }, {
+      "name" : "ORACLE_ORDER_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.ORACLE_ORDER_NUMBER"
+    }, {
+      "name" : "SOURCE_SYSTEM",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SOURCE_SYSTEM"
+    }, {
+      "name" : "SOURCE_ORDER_NUM",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SOURCE_ORDER_NUM"
+    }, {
+      "name" : "DATE_SALES_ORDER",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.DATE_SALES_ORDER"
+    }, {
+      "name" : "SHIPPING_NUMBER",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SHIPPING_NUMBER"
+    }, {
+      "name" : "DATE_REQUESTED",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.DATE_REQUESTED"
+    }, {
+      "name" : "SCHEDULE_SHIP_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.SCHEDULE_SHIP_DATE"
+    }, {
+      "name" : "ACTUAL_SHIP_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.ACTUAL_SHIP_DATE"
+    }, {
+      "name" : "FULFILLMENT_DATE",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.FULFILLMENT_DATE"
+    }, {
+      "name" : "COMMERCIAL_NAME",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.COMMERCIAL_NAME"
+    }, {
+      "name" : "BROKER",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.BROKER"
+    }, {
+      "name" : "Gross Amount PM",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.Gross Amount PM"
+    }, {
+      "name" : "Gross Amount % Chg vs PM",
+      "sourceLogicalColumn" : "logicalColumn:Zanetti BM001.Fact OM.Gross Amount % Chg vs PM"
+    } ]
+  }
+}

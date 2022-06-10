@@ -1,0 +1,13 @@
+{
+  "subjectArea" : {
+    "name" : "Zanetti OM",
+    "sourceBusinessModel" : "businessModel:Zanetti BM001",
+    "tableOrder" : [ {
+      "name" : "presentationTable:Zanetti OM.Transaction Date"
+    }, {
+      "name" : "presentationTable:Zanetti OM.Brand"
+    }, {
+      "name" : "presentationTable:Zanetti OM.Fact OM"
+    } ]
+  }
+}

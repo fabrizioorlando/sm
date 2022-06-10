@@ -1,0 +1,102 @@
+{
+  "logicalTable" : {
+    "name" : "Brand",
+    "type" : "DIMENSION",
+    "logicalColumns" : [ {
+      "name" : "BRAND_BRAND_DESC",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias BRAND",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias BRAND.BRAND_BRAND_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BRAND_BRAND_CODE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias BRAND",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias BRAND.BRAND_BRAND_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BRAND_BRAND_EQUITY_CODE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias BRAND",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias BRAND.BRAND_BRAND_EQUITY_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BRAND_BRAND_EQUITY_DESC",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias BRAND",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias BRAND.BRAND_BRAND_EQUITY_DESC" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BRAND_LINE_CODE",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias BRAND",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias BRAND.BRAND_LINE_CODE" ]
+          }
+        } ]
+      }
+    }, {
+      "name" : "BRAND_LINE_DESC",
+      "dataType" : "VARCHAR",
+      "writeable" : false,
+      "logicalColumnSource" : {
+        "derivedFrom" : "PHYSICAL_COLUMNS",
+        "physicalMappings" : [ {
+          "logicalTableSource" : "Alias BRAND",
+          "physicalExpression" : {
+            "expressionTemplate" : "%1",
+            "expressionObjects" : [ "physicalColumn:MyDatabase.FORLANDO.Alias BRAND.BRAND_LINE_DESC" ]
+          }
+        } ]
+      }
+    } ],
+    "logicalTableSources" : [ {
+      "name" : "Alias BRAND",
+      "disable" : false,
+      "tableMapping" : {
+        "tables" : [ "physicalTable:MyDatabase.FORLANDO.Alias BRAND" ]
+      },
+      "combineWithOtherFragments" : false,
+      "enableFragmentSelection" : false,
+      "distinctValues" : false
+    } ],
+    "primaryKey" : [ "BRAND_LINE_CODE" ]
+  }
+}

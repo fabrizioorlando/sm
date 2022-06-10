@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Alias BRAND",
+    "sourceTable": "physicalTable:MyDatabase.FORLANDO.BRAND",
+    "additionalKeys": [
+      [
+        "BRAND_LINE_CODE"
+      ]
+    ]
+  }
+}

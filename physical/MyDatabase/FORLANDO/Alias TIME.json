@@ -1,0 +1,11 @@
+{
+  "physicalTable": {
+    "name": "Alias TIME",
+    "sourceTable": "physicalTable:MyDatabase.FORLANDO.TIME",
+    "additionalKeys": [
+      [
+        "DAY_DT"
+      ]
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "physicalTable": {
+    "name": "Alias OM",
+    "sourceTable": "physicalTable:MyDatabase.FORLANDO.OM52_FULL",
+    "joins": [      {
+        "rightTable": "physicalTable:MyDatabase.FORLANDO.Alias BRAND",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:MyDatabase.FORLANDO.Alias OM.BRAND_LINE_CODE",
+            "rightColumn": "physicalColumn:MyDatabase.FORLANDO.Alias BRAND.BRAND_LINE_CODE"
+          }
+        ]
+      },
+      {
+        "rightTable": "physicalTable:MyDatabase.FORLANDO.Alias TIME",
+        "joinConditions": [ {
+            "leftColumn": "physicalColumn:MyDatabase.FORLANDO.Alias OM.DATE_SALES_ORDER",
+            "rightColumn": "physicalColumn:MyDatabase.FORLANDO.Alias TIME.DAY_DT"
+          }
+        ]
+      }
+    ]
+  }
+}
